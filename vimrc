@@ -1,6 +1,6 @@
 filetype on
 syntax on
-colorscheme dark_eyes
+colorscheme Tomorrow-Night
 set colorcolumn=80
 set number
 let mapleader=" "
@@ -12,9 +12,13 @@ set nowrap
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set encoding=utf-8
 set smartindent
 set autoindent
 set hlsearch
+set mouse=a
+set showcmd
+set scrolloff=5
 nnoremap <silent> <leader>/ :nohlsearch<bar>:echo<cr>
 execute pathogen#infect()
 filetype plugin on

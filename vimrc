@@ -5,6 +5,7 @@ set colorcolumn=80
 set number
 let mapleader=" "
 map <leader>s :source ~/.vimrc<cr>
+set pastetoggle=<leader>p
 set hidden
 set history=1000
 filetype indent on
@@ -16,7 +17,7 @@ set encoding=utf-8
 set smartindent
 set autoindent
 set hlsearch
-set mouse=a
+"set mouse=a
 set showcmd
 set scrolloff=5
 nnoremap <silent> <leader>/ :nohlsearch<bar>:echo<cr>

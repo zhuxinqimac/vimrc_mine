@@ -5,7 +5,12 @@ set colorcolumn=80
 set number
 let mapleader=" "
 map <leader>s :source ~/.vimrc<cr>
-set pastetoggle=<leader>p
+"set pastetoggle=<leader>p
+set pastetoggle=<F2>
+nnoremap tl  :tabnext<CR>
+nnoremap tj  :tabnext<CR>
+nnoremap th  :tabprev<CR>
+nnoremap tk  :tabprev<CR>
 set hidden
 set history=1000
 filetype indent on

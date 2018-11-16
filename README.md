@@ -16,3 +16,17 @@ Link config file to ~/.vimrc. Absolute paths may be required:
 ```
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
+
+## tmux color problem
+If color theme is not working well with tmux, try close all tmux sessions, 
+and insert the following line to ~/.tmux.conf:
+```
+set -g default-terminal "screen-256color"
+```
+Then restart tmux.
+
+## PS: bring vim nav keys to tmux:
+Insert the following line to ~/.tmux.conf:
+```
+setw -g mode-keys vi
+```

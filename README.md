@@ -12,7 +12,7 @@ Clone recursively from this repository:
 ```
 git clone --recurse-submodules https://github.com/zhuxinqimac/vimrc_mine.git .
 ```
-Link config file to ~/.vimrc. Absolute path may be required:
+Link config file to ~/.vimrc. Absolute paths may be required:
 ```
-ls -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/vimrc ~/.vimrc
 ```

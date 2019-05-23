@@ -31,6 +31,10 @@ filetype plugin on
 set laststatus=2
 "set noshowmode
 
+" Ctrl-j/k inserts blank line below/above.
+nnoremap <silent><C-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+
 " ==== lightline
 let g:lightline = { 'colorscheme': 'wombat' }
 
@@ -58,3 +62,4 @@ nmap <leader>t :CommandT<CR>
 " ==== Python syntax
 let g:python_highlight_all = 1
 let g:python_highlight_space_errors = 0
+

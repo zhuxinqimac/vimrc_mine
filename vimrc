@@ -45,7 +45,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>j :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
+let NERDTreeIgnore=['\.DS_Store', '\~$']
 
 " ==== MRU
 map <leader>f :MRU<cr>
@@ -62,4 +62,8 @@ nmap <leader>t :CommandT<CR>
 " ==== Python syntax
 let g:python_highlight_all = 1
 let g:python_highlight_space_errors = 0
+
+" ==== Rainbow parentheses
+let g:rainbow_active = 1 
+"set to 0 if you want to enable it later via :RainbowToggle
 

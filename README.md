@@ -30,3 +30,9 @@ Insert the following line to ~/.tmux.conf:
 ```
 setw -g mode-keys vi
 ```
+
+## PS: install ruby support in vim
+Use the following line:
+```
+sudo apt-get install ruby vim-nox
+```

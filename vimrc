@@ -1,3 +1,4 @@
+execute pathogen#infect()
 filetype on
 syntax on
 colorscheme Tomorrow-Night
@@ -26,7 +27,6 @@ set hlsearch
 set showcmd
 set scrolloff=5
 nnoremap <silent> <leader>/ :nohlsearch<bar>:echo<cr>
-execute pathogen#infect()
 filetype plugin on
 set laststatus=2
 "set noshowmode
@@ -44,3 +44,8 @@ let NERDTreeShowHidden=1
 " ==== MRU
 map <leader>f :MRU<cr>
 "let MRU_Max_Entries = 200
+
+"color
+if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+endif

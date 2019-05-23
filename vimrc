@@ -38,8 +38,10 @@ let g:lightline = { 'colorscheme': 'wombat' }
 "autocmd vimenter * NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-map <leader>t :NERDTreeToggle<cr>
+nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>j :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
 
 " ==== MRU
 map <leader>f :MRU<cr>
@@ -49,3 +51,10 @@ map <leader>f :MRU<cr>
 if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
+
+" ==== CommandT
+nmap <leader>t :CommandT<CR>
+
+" ==== Python syntax
+let g:python_highlight_all = 1
+let g:python_highlight_space_errors = 0

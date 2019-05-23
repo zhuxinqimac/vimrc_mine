@@ -30,6 +30,7 @@ nnoremap <silent> <leader>/ :nohlsearch<bar>:echo<cr>
 filetype plugin on
 set laststatus=2
 "set noshowmode
+set bs=2
 
 " Ctrl-j/k inserts blank line below/above.
 nnoremap <silent><C-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
@@ -67,3 +68,9 @@ let g:python_highlight_space_errors = 0
 let g:rainbow_active = 1 
 "set to 0 if you want to enable it later via :RainbowToggle
 
+" ==== YouCompleteMe
+nnoremap <leader>to :YcmCompleter GoTo<CR>
+nnoremap <leader>tol :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>tod :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>doc :YcmCompleter GetDoc<CR>
+nnoremap <leader>tp :YcmCompleter GetType<CR>

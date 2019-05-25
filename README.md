@@ -72,3 +72,8 @@ python3 install.py
 ```
 check https://github.com/Valloric/YouCompleteMe
 
+## PS: setup bash vi mode
+Put this line in ~/.inputrc
+```
+set editing-mode vi
+```

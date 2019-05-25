@@ -48,3 +48,27 @@ If it shows error related to "ruby-dev", do
 sudo apt-get install ruby-dev
 ```
 Then rake make again.
+
+## PS: syntastic support
+For Python, you need to install flake8 first:
+```
+sudo apt-get install python3-flake8
+```
+check https://github.com/vim-syntastic/syntastic
+
+## PS: vim-autoformat support
+For Python, you need to install yapf first
+```
+conda install yapf
+```
+check https://github.com/Chiel92/vim-autoformat
+
+## PS: For YouCompleteMe support
+You should compile first
+```
+sudo apt install build-essential cmake3 python3-dev
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py
+```
+check https://github.com/Valloric/YouCompleteMe
+

@@ -1,5 +1,6 @@
 # vimrc_mine
-My simple but powerful vimrc config.
+My powerful vimrc config.
+See the directory bundle to inspect plugins.
 
 ## usage
 Make dir:

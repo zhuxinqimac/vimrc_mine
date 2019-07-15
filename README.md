@@ -11,7 +11,7 @@ cd .vim
 ```
 Clone recursively from this repository:
 ```
-git clone --recurse-submodules https://github.com/zhuxinqimac/vimrc_mine.git .
+git clone --recurse-submodules git@github.com:zhuxinqimac/vimrc_mine.git .
 ```
 Link config file to ~/.vimrc. Absolute paths may be required:
 ```
@@ -23,6 +23,10 @@ If color theme is not working well with tmux, try close all tmux sessions,
 and insert the following line to ~/.tmux.conf:
 ```
 set -g default-terminal "screen-256color"
+```
+and add the following line to ~/.bashrc:
+```
+export TERM=screen-256color
 ```
 Then restart tmux.
 

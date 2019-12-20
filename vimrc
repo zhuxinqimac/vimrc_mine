@@ -38,8 +38,7 @@ nnoremap <silent><C-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 
 " Indent last parenthese
-nnoremap <silent><C-i> $i<CR><ESC>k
-"nnoremap fw :Autoformat <bar> :w<CR>
+"nnoremap <silent><C-i> $i<CR><ESC>k
 
 " ==== lightline
 let g:lightline = { 'colorscheme': 'wombat' }
@@ -82,8 +81,18 @@ nnoremap <leader>tp :YcmCompleter GetType<CR>
 let g:ycm_complete_in_comments = 1
 
 " ==== Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " ==== autoformat
 let g:autoformat_autoindent = 0
+let g:formatter_yapf_style = 'pep8'
 nnoremap fw :Autoformat <bar> :w<CR>
+
+" ==== auto-pair
+let g:AutoPairsFlyMode = 1

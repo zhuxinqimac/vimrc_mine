@@ -1,0 +1,19 @@
+
+import argparse
+import os
+import pdb
+
+
+def main():
+    parser = argparse.ArgumentParser(description='Project description.')
+    parser.add_argument('--result_dir', help='Results directory.',
+                        type=str, default='/mnt/hdd/repo_results/test')
+    parser.add_argument('--data_dir', help='Dataset directory.',
+                        type=str, default='/mnt/hdd/Datasets/test_data')
+    parser.add_argument('--no_gpu', help='Do not use GPUs.',
+                        action='store_true')
+    args = parser.parse_args()
+
+
+if __name__ == "__main__":
+    main()

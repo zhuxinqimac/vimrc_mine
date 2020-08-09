@@ -40,3 +40,6 @@
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = git://github.com/jiangmiao/auto-pairs.git
+[submodule "bundle/vim-grammarous"]
+	path = bundle/vim-grammarous
+	url = https://github.com/rhysd/vim-grammarous.git

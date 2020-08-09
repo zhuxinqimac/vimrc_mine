@@ -43,3 +43,9 @@
 [submodule "bundle/vim-grammarous"]
 	path = bundle/vim-grammarous
 	url = https://github.com/rhysd/vim-grammarous.git
+[submodule "bundle/dictionary.vim"]
+	path = bundle/dictionary.vim
+	url = https://github.com/itchyny/dictionary.vim.git
+[submodule "bundle/victionary"]
+	path = bundle/victionary
+	url = https://github.com/farconics/victionary.git

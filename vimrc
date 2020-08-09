@@ -113,3 +113,10 @@ nnoremap fw :Autoformat <bar> :w<CR>
 
 " ==== auto-pair
 let g:AutoPairsFlyMode = 0
+
+" === victionary
+let g:victionary#map_defaults = 0
+nmap <leader>D <Plug>(victionary#define_prompt)
+nmap <leader>de <Plug>(victionary#define_under_cursor)
+nmap <leader>S <Plug>(victionary#synonym_prompt)
+nmap <leader>sy <Plug>(victionary#synonym_under_cursor)

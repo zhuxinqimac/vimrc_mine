@@ -59,6 +59,10 @@ For Python, you need to install flake8 first:
 ```
 sudo apt-get install python3-flake8
 ```
+Or install pylint:
+```
+conda install pylint
+```
 check https://github.com/vim-syntastic/syntastic
 
 ## PS: vim-autoformat support
